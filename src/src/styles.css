@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+/* import "~bootstrap/dist/css/bootstrap.css" */
+
+.navbar-inverse {
+	border-color: #0071c5;
+	background-color: #0071c5;
+}
+
+.navbar-brand {
+	color: #fff !important;
+}
+.navbar-logo {
+    float: left;
+    height: 50px;
+    padding: 10px 15px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-user {
+    float: right;
+    height: 50px;
+    padding: 15px 15px;
+    color: #fff;
+}

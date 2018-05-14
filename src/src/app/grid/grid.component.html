@@ -1,0 +1,22 @@
+<h2 class="row grid-comp">{{title}}</h2>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>AP Id</th>
+        <th>AP Name</th>
+        <th>Campus Name</th>
+        <th>Campus Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ap of APs">
+        <th> {{ap.apId}} </th>
+        <th> {{ap.apName}}</th>
+        <th> {{ap.campusName}}</th>
+        <th> {{ap.campusCode}}</th>
+      </tr>
+    </tbody>
+  </table>
+</div>
