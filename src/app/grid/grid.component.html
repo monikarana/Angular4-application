@@ -1,5 +1,7 @@
 <h2 class="row grid-comp">{{title}}</h2>
 
+<a routerLink="/addAP" class="btn btn-primary">New Access Point</a>
+
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -8,6 +10,7 @@
         <th>AP Name</th>
         <th>Campus Name</th>
         <th>Campus Code</th>
+      <th> Actions </th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +19,12 @@
         <th> {{ap.apName}}</th>
         <th> {{ap.campusName}}</th>
         <th> {{ap.campusCode}}</th>
+        <th>
+          <a [routerLink]="['/updateAP/', ap.id]"> Edit </a>
+          /
+          <a (click) = "deleteAP(ap.id)">Delete</a>
+        </th>
+
       </tr>
     </tbody>
   </table>

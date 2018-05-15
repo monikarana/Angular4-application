@@ -1,33 +1,33 @@
-<div class="container add-AP">
+<div class="container update-AP">
 	<h2 class="sub-header">Add Access Points</h2>
-	<form class="form-horizontal" id = "formNewAP" name = "formNewAP" #apData = "ngForm" (ngSubmit) = "addNewAP(apData.value)">
+	<form class="form-horizontal" id = "formUpdateAP" name = "formUpdateAP" #apData = "ngForm" (ngSubmit) = "updateAP(apData.value)">
 		<div class="form-group">
 			<label for="inputAPName" class="control-label col-xs-2">Acess Point Name</label>
 				<div class="col-xs-10">
-				<input type="text" class="form-control" name="apName" id="apName" placeholder="Access Point Name" ngModel>
+				<input type="text" class="form-control" name="apName" id="apName" placeholder="Access Point Name" [(ngModel)] = "data.apName" ngModel>
 				</div>
 		</div>
 		<div class="form-group">
 			<label for="inputAPId" class="control-label col-xs-2">Acess Point Id</label>
 				<div class="col-xs-10">
-					<input type="text" class="form-control"  name="apId" id="apId" placeholder="Access Point Id" ngModel>
+					<input type="text" class="form-control"  name="apId" id="apId" placeholder="Access Point Id" [(ngModel)] = "data.apId" ngModel>
 				</div>
 		</div>
 		<div class="form-group">
 			<label for="InputCampusName" class="control-label col-xs-2">Campus Name</label>
 				<div class="col-xs-10">
-					<input type="text" class="form-control"  name="campusName" id="campusName" placeholder="Campus Name" ngModel>
+					<input type="text" class="form-control"  name="campusName" id="campusName" placeholder="Campus Name"  [(ngModel)] = "data.campusName" ngModel>
 				</div>
 		</div>
 		<div class="form-group">
 			<label for="InputCampusCode" class="control-label col-xs-2">Campus Code</label>
 				<div class="col-xs-10">
-					<input type="text" class="form-control"  name="campusCode" id="campusCode" placeholder="Campus Code" ngModel>
+					<input type="text" class="form-control"  name="campusCode" id="campusCode" placeholder="Campus Code" [(ngModel)] = "data.campusCode" ngModel>
 				</div>
 		</div>
 		<!-- <div class="form-group"> -->
 			<div class="col-xs-offset-2 col-xs-10">
-				<input type="submit" class="btn btn-primary" value = "Add AP">
+				<input type="submit" class="btn btn-primary" value = "Update AP">
 				<a routerLink="/home" class="btn btn-danger">cancel</a>
 			</div>
 		<!-- </div> -->

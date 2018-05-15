@@ -1,0 +1,39 @@
+{
+  "AccessPoints": [
+    {
+      "id": 1,
+      "apId": "12323",
+      "apName": "testAcessPpoint",
+      "campusName": "Bangalore",
+      "campusCode": "EMB"
+    },
+    {
+      "apId": "12324",
+      "apName": "testAcessPpoint",
+      "campusName": "Bangalore",
+      "campusCode": "EMB SRR",
+      "id": 2
+    },
+    {
+      "apId": "2324",
+      "apName": "access point 1",
+      "campusName": "Sarjapur",
+      "campusCode": "SRR3",
+      "id": 5
+    },
+    {
+      "apId": "shkjfdhs",
+      "apName": "9080",
+      "campusName": "jdhfis",
+      "campusCode": "jhdfj",
+      "id": 6
+    },
+    {
+      "apId": "jvlj",
+      "apName": "varsha roomie",
+      "campusName": "djkfdj",
+      "campusCode": "kdkfjdl",
+      "id": 7
+    }
+  ]
+}
